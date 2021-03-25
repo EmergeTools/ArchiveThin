@@ -1,5 +1,5 @@
 build:
-	swift build -c release
+	swift build --disable-sandbox -c release
 
 install: build
 	mkdir -p "/usr/local/bin"
