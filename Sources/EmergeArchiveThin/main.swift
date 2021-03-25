@@ -18,7 +18,6 @@ struct Thin: ParsableCommand {
 
     for case let fileURL as URL in enumerator {
       if fileURL.pathExtension == "" && fileURL.isFatBinary {
-        print("Binary \(fileURL)")
         try fileURL.thin()
       }
     }
